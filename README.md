@@ -1,4 +1,4 @@
-# Fraud-Signal-Analytics
+# Fraud Detection Analytics
 
 > SQL-based exploratory analysis and composite risk scoring framework for financial fraud detection, built on Snowflake — designed as the feature engineering foundation for an ML classification pipeline.
 
