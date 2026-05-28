@@ -1,0 +1,401 @@
+transaction_id,customer_id,transaction_date,amount,merchant_category,transaction_type,location,hour_of_day,is_flagged
+T0001,C052,2024-05-15,207.4,Online_Retail,online,New York,3,0
+T0002,C005,2024-09-18,957.33,Electronics,in-store,Chicago,23,0
+T0003,C015,2024-12-17,800,ATM_Withdrawal,online,Chicago,1,1
+T0004,C093,2024-11-15,323.06,Dining,in-store,Houston,2,0
+T0005,C041,2024-12-22,753.44,Electronics,in-store,Phoenix,9,0
+T0006,C038,2024-03-30,1403.04,Travel,online,Foreign,21,0
+T0007,C079,2024-10-23,81.46,Gas,in-store,Phoenix,0,0
+T0008,C078,2024-08-30,82.66,Online_Retail,online,Houston,14,0
+T0009,C095,2024-02-17,1295.63,Travel,online,Chicago,16,0
+T0010,C097,2024-08-31,25.71,Dining,in-store,Los Angeles,6,0
+T0011,C079,2024-07-15,1478.94,Electronics,in-store,Houston,20,0
+T0012,C064,2024-08-05,100,ATM_Withdrawal,online,Los Angeles,20,0
+T0013,C029,2024-03-03,1181.2,Travel,online,Foreign,16,0
+T0014,C059,2024-08-14,1251.59,Travel,online,Foreign,16,0
+T0015,C079,2024-11-22,200,ATM_Withdrawal,in-store,Los Angeles,23,0
+T0016,C036,2024-10-03,1675.47,Luxury_Goods,online,Foreign,2,0
+T0017,C011,2024-02-02,1456.88,Travel,online,Foreign,12,0
+T0018,C054,2024-08-03,200,ATM_Withdrawal,in-store,Phoenix,14,1
+T0019,C050,2024-07-18,111.53,Grocery,in-store,Houston,0,0
+T0020,C054,2024-06-21,19.87,Dining,in-store,Los Angeles,8,0
+T0021,C086,2024-10-30,500,ATM_Withdrawal,online,Houston,4,0
+T0022,C073,2024-01-26,166.98,Grocery,online,Foreign,13,1
+T0023,C034,2024-05-22,500,ATM_Withdrawal,in-store,Los Angeles,14,1
+T0024,C097,2024-01-27,800,ATM_Withdrawal,in-store,New York,15,1
+T0025,C045,2024-01-11,77.78,Dining,online,Foreign,1,0
+T0026,C080,2024-04-21,1193.34,Travel,online,Foreign,15,0
+T0027,C060,2024-02-28,264.29,Gas,in-store,Los Angeles,19,0
+T0028,C100,2024-12-12,727.12,Travel,online,New York,18,1
+T0029,C049,2024-05-04,1000,ATM_Withdrawal,online,New York,18,0
+T0030,C014,2024-07-08,155.65,Gas,online,Phoenix,1,0
+T0031,C009,2024-07-04,45.88,Online_Retail,online,New York,13,0
+T0032,C082,2024-10-02,3328.7,Luxury_Goods,online,Foreign,16,0
+T0033,C100,2024-02-14,3481.0,Luxury_Goods,in-store,Foreign,18,1
+T0034,C036,2024-06-15,2230.07,Luxury_Goods,online,Phoenix,19,0
+T0035,C024,2024-12-25,3581.12,Luxury_Goods,online,Foreign,8,1
+T0036,C036,2024-05-03,176.12,Grocery,online,New York,7,0
+T0037,C089,2024-05-04,1915.4,Luxury_Goods,in-store,New York,2,1
+T0038,C040,2024-10-08,154.67,Online_Retail,online,Houston,17,0
+T0039,C043,2024-03-02,95.48,Online_Retail,online,Foreign,14,1
+T0040,C093,2024-04-04,269.14,Dining,in-store,New York,23,0
+T0041,C025,2024-11-01,268.47,Dining,in-store,Chicago,23,0
+T0042,C037,2024-12-28,709.2,Electronics,online,Chicago,7,0
+T0043,C069,2024-03-05,1440.22,Travel,online,Foreign,1,1
+T0044,C082,2024-04-04,2041.64,Luxury_Goods,online,Phoenix,9,1
+T0045,C007,2024-11-18,35.19,Gas,in-store,New York,2,0
+T0046,C088,2024-05-07,38.96,Grocery,online,Los Angeles,18,0
+T0047,C016,2024-06-01,500,ATM_Withdrawal,online,Phoenix,12,0
+T0048,C076,2024-02-20,1000,ATM_Withdrawal,in-store,Phoenix,19,0
+T0049,C098,2024-10-09,91.55,Dining,online,Chicago,21,0
+T0050,C010,2024-01-17,1019.34,Travel,online,Foreign,14,0
+T0051,C030,2024-05-15,89.36,Gas,in-store,Foreign,14,0
+T0052,C081,2024-05-16,60.66,Dining,in-store,New York,17,0
+T0053,C019,2024-05-27,1674.84,Electronics,online,Los Angeles,9,0
+T0054,C057,2024-09-13,1893.95,Electronics,in-store,Foreign,9,0
+T0055,C070,2024-01-14,2613.0,Luxury_Goods,in-store,Foreign,1,0
+T0056,C012,2024-03-30,269.46,Dining,online,Foreign,8,1
+T0057,C061,2024-02-16,3349.86,Luxury_Goods,in-store,Foreign,18,1
+T0058,C061,2024-03-23,45.56,Online_Retail,online,Houston,10,0
+T0059,C043,2024-01-19,800,ATM_Withdrawal,in-store,Chicago,21,0
+T0060,C059,2024-09-20,1579.21,Electronics,in-store,Chicago,10,0
+T0061,C001,2024-11-16,3147.55,Luxury_Goods,in-store,Foreign,16,1
+T0062,C057,2024-12-23,107.93,Grocery,online,Chicago,17,0
+T0063,C063,2024-01-08,724.89,Electronics,online,Foreign,19,0
+T0064,C071,2024-11-27,100,ATM_Withdrawal,online,Los Angeles,3,1
+T0065,C020,2024-05-04,3930.86,Luxury_Goods,in-store,Chicago,13,0
+T0066,C059,2024-02-05,1776.75,Travel,online,Foreign,19,0
+T0067,C036,2024-06-01,300,ATM_Withdrawal,in-store,Phoenix,8,0
+T0068,C076,2024-07-12,3170.05,Luxury_Goods,online,Houston,11,0
+T0069,C059,2024-07-29,140.21,Online_Retail,online,Los Angeles,22,0
+T0070,C006,2024-12-05,141.27,Online_Retail,online,Foreign,15,0
+T0071,C084,2024-02-21,1241.83,Travel,online,New York,4,1
+T0072,C057,2024-03-20,1761.23,Electronics,in-store,New York,23,0
+T0073,C010,2024-06-17,781.1,Luxury_Goods,in-store,Foreign,22,1
+T0074,C087,2024-01-19,800,ATM_Withdrawal,in-store,Foreign,22,0
+T0075,C080,2024-02-16,1995.24,Electronics,online,Foreign,21,0
+T0076,C056,2024-01-24,1821.33,Electronics,online,Houston,5,0
+T0077,C042,2024-07-29,93.03,Grocery,in-store,Chicago,11,0
+T0078,C073,2024-12-15,857.71,Travel,online,Foreign,2,1
+T0079,C031,2024-01-05,1393.64,Luxury_Goods,online,Foreign,20,1
+T0080,C060,2024-06-02,345.8,Gas,online,New York,14,0
+T0081,C082,2024-09-04,500,ATM_Withdrawal,in-store,Houston,9,1
+T0082,C014,2024-05-31,347.52,Dining,in-store,Phoenix,11,0
+T0083,C003,2024-01-26,1000,ATM_Withdrawal,in-store,New York,18,0
+T0084,C078,2024-04-07,1266.52,Luxury_Goods,in-store,Los Angeles,19,0
+T0085,C080,2024-08-13,115.04,Gas,online,Foreign,3,0
+T0086,C005,2024-07-31,110.34,Online_Retail,online,Foreign,4,1
+T0087,C023,2024-03-25,320.59,Dining,online,Phoenix,11,0
+T0088,C033,2024-04-25,763.55,Luxury_Goods,in-store,Chicago,3,1
+T0089,C087,2024-03-04,800,ATM_Withdrawal,in-store,New York,12,1
+T0090,C059,2024-07-09,289.62,Online_Retail,online,Foreign,23,0
+T0091,C014,2024-11-08,200.88,Dining,in-store,New York,19,0
+T0092,C029,2024-01-24,365.85,Electronics,in-store,Foreign,9,0
+T0093,C005,2024-07-17,192.77,Gas,in-store,New York,3,0
+T0094,C059,2024-03-20,209.7,Online_Retail,online,Foreign,23,0
+T0095,C054,2024-12-19,667.52,Electronics,in-store,Phoenix,13,0
+T0096,C048,2024-12-17,43.78,Dining,in-store,Houston,7,0
+T0097,C048,2024-08-20,339.19,Online_Retail,online,New York,12,0
+T0098,C012,2024-10-16,52.81,Dining,online,New York,10,0
+T0099,C027,2024-03-16,581.05,Electronics,online,Phoenix,6,0
+T0100,C077,2024-02-26,281.49,Grocery,in-store,Los Angeles,4,0
+T0101,C085,2024-06-14,90.9,Grocery,online,New York,11,0
+T0102,C003,2024-08-31,1529.48,Travel,online,Foreign,4,0
+T0103,C058,2024-11-10,181.31,Online_Retail,online,Phoenix,18,0
+T0104,C006,2024-07-24,172.85,Gas,in-store,Foreign,0,1
+T0105,C055,2024-11-07,299.46,Electronics,in-store,Foreign,14,0
+T0106,C019,2024-06-15,1164.46,Electronics,online,Chicago,19,0
+T0107,C049,2024-02-28,279.65,Gas,in-store,Phoenix,19,0
+T0108,C084,2024-07-23,291.32,Dining,in-store,Houston,7,0
+T0109,C054,2024-03-19,842.46,Electronics,in-store,Houston,10,0
+T0110,C088,2024-07-09,837.98,Luxury_Goods,online,Foreign,2,1
+T0111,C017,2024-08-04,307.03,Grocery,in-store,Foreign,3,1
+T0112,C093,2024-04-18,206.49,Grocery,in-store,Phoenix,9,0
+T0113,C020,2024-10-20,3169.12,Luxury_Goods,online,Chicago,17,0
+T0114,C029,2024-01-15,300,ATM_Withdrawal,online,Phoenix,21,0
+T0115,C024,2024-10-16,305.75,Gas,in-store,Chicago,11,1
+T0116,C085,2024-02-16,100,ATM_Withdrawal,online,Los Angeles,23,1
+T0117,C096,2024-06-15,135.82,Dining,in-store,Houston,14,0
+T0118,C100,2024-02-11,242.06,Electronics,online,Los Angeles,5,0
+T0119,C035,2024-02-28,3142.3,Luxury_Goods,in-store,Houston,13,0
+T0120,C045,2024-06-06,1000,ATM_Withdrawal,online,Chicago,21,0
+T0121,C006,2024-04-18,112.48,Dining,in-store,Phoenix,1,1
+T0122,C099,2024-08-08,1070.16,Travel,online,Chicago,10,0
+T0123,C023,2024-12-08,1183.64,Travel,online,Foreign,22,1
+T0124,C046,2024-02-09,1000.55,Electronics,in-store,Foreign,1,1
+T0125,C041,2024-07-26,100,ATM_Withdrawal,in-store,Foreign,20,1
+T0126,C003,2024-07-04,244.47,Online_Retail,online,Los Angeles,19,0
+T0127,C012,2024-02-10,800,ATM_Withdrawal,online,Los Angeles,13,1
+T0128,C051,2024-11-20,35.97,Gas,in-store,Los Angeles,10,0
+T0129,C015,2024-03-16,229.45,Dining,in-store,Chicago,23,0
+T0130,C031,2024-12-01,432.81,Electronics,online,Chicago,6,0
+T0131,C010,2024-10-23,1192.91,Travel,online,Foreign,15,0
+T0132,C058,2024-08-14,33.22,Online_Retail,online,Foreign,10,1
+T0133,C081,2024-08-24,35.22,Gas,in-store,Phoenix,1,0
+T0134,C058,2024-02-16,303.85,Grocery,online,Chicago,9,0
+T0135,C079,2024-01-22,1000,ATM_Withdrawal,in-store,Phoenix,17,0
+T0136,C058,2024-08-18,335.63,Dining,in-store,Phoenix,15,0
+T0137,C014,2024-05-06,68.67,Online_Retail,online,Foreign,2,1
+T0138,C091,2024-07-17,3712.78,Luxury_Goods,in-store,Phoenix,5,0
+T0139,C053,2024-06-20,224.5,Online_Retail,online,Foreign,19,0
+T0140,C009,2024-12-02,106.61,Online_Retail,online,New York,17,0
+T0141,C078,2024-12-01,723.93,Travel,online,Foreign,18,0
+T0142,C090,2024-10-13,300,ATM_Withdrawal,online,Phoenix,22,0
+T0143,C049,2024-12-16,332.02,Online_Retail,online,Los Angeles,21,0
+T0144,C068,2024-04-19,721.4,Electronics,in-store,Phoenix,11,1
+T0145,C044,2024-02-21,1535.27,Luxury_Goods,online,Foreign,4,1
+T0146,C065,2024-04-02,62.45,Grocery,in-store,Phoenix,4,0
+T0147,C089,2024-08-15,1481.23,Travel,online,New York,13,0
+T0148,C079,2024-08-28,338.3,Gas,in-store,Los Angeles,17,0
+T0149,C025,2024-05-24,166.97,Online_Retail,online,Foreign,18,0
+T0150,C100,2024-05-08,200,ATM_Withdrawal,in-store,Los Angeles,6,0
+T0151,C007,2024-05-25,3479.08,Luxury_Goods,in-store,New York,22,0
+T0152,C011,2024-04-23,959.32,Travel,online,Foreign,16,0
+T0153,C058,2024-04-30,180.68,Online_Retail,online,New York,13,0
+T0154,C050,2024-11-28,333.3,Electronics,in-store,Los Angeles,0,0
+T0155,C043,2024-12-27,1687.55,Travel,online,Foreign,9,0
+T0156,C061,2024-11-07,1023.32,Luxury_Goods,online,New York,8,0
+T0157,C068,2024-05-02,100,ATM_Withdrawal,online,Chicago,7,1
+T0158,C054,2024-09-20,557.52,Luxury_Goods,online,Foreign,15,1
+T0159,C074,2024-10-19,129.96,Dining,online,Chicago,13,1
+T0160,C054,2024-09-26,275.21,Travel,online,New York,16,0
+T0161,C070,2024-05-09,343.55,Grocery,in-store,Houston,1,0
+T0162,C096,2024-02-23,233.42,Grocery,in-store,New York,11,0
+T0163,C099,2024-11-25,125.11,Online_Retail,online,Los Angeles,1,0
+T0164,C023,2024-04-13,629.44,Luxury_Goods,in-store,Los Angeles,2,0
+T0165,C006,2024-10-05,346.3,Dining,online,Chicago,9,0
+T0166,C061,2024-01-25,303.13,Gas,online,Foreign,6,0
+T0167,C084,2024-08-13,146.01,Online_Retail,online,Chicago,3,0
+T0168,C050,2024-09-22,134.9,Online_Retail,online,Los Angeles,15,0
+T0169,C035,2024-10-06,1671.33,Electronics,in-store,New York,13,0
+T0170,C038,2024-08-16,110.52,Online_Retail,online,New York,2,0
+T0171,C078,2024-06-29,100,ATM_Withdrawal,online,Foreign,14,1
+T0172,C079,2024-07-26,1000,ATM_Withdrawal,in-store,Foreign,1,1
+T0173,C047,2024-03-05,960.62,Travel,online,Los Angeles,19,0
+T0174,C009,2024-03-19,21.01,Dining,in-store,Chicago,12,0
+T0175,C087,2024-07-22,2353.11,Luxury_Goods,in-store,Foreign,2,1
+T0176,C041,2024-07-17,179.67,Gas,online,New York,0,0
+T0177,C072,2024-05-26,1993.28,Electronics,in-store,Chicago,22,0
+T0178,C089,2024-08-15,3645.38,Luxury_Goods,online,Foreign,2,1
+T0179,C012,2024-06-02,108.72,Online_Retail,online,Foreign,11,0
+T0180,C021,2024-03-12,521.81,Travel,online,Phoenix,7,0
+T0181,C031,2024-10-09,3312.82,Luxury_Goods,online,Foreign,18,1
+T0182,C017,2024-09-26,1479.91,Electronics,online,Chicago,12,0
+T0183,C053,2024-08-26,500,ATM_Withdrawal,online,Los Angeles,10,0
+T0184,C088,2024-03-07,71.87,Online_Retail,online,Los Angeles,17,0
+T0185,C056,2024-12-29,65.07,Grocery,online,Phoenix,4,0
+T0186,C029,2024-11-21,95.21,Online_Retail,online,Phoenix,9,0
+T0187,C071,2024-11-24,41.77,Gas,online,Foreign,9,1
+T0188,C022,2024-10-15,1269.51,Travel,online,Foreign,19,0
+T0189,C006,2024-04-17,99.98,Grocery,online,New York,20,0
+T0190,C099,2024-06-03,1000,ATM_Withdrawal,online,Houston,20,0
+T0191,C062,2024-08-13,30.37,Dining,in-store,Chicago,14,0
+T0192,C054,2024-06-12,3515.2,Luxury_Goods,in-store,Foreign,19,1
+T0193,C094,2024-02-24,185.09,Online_Retail,online,Houston,4,0
+T0194,C041,2024-01-26,57.9,Dining,in-store,New York,8,0
+T0195,C038,2024-06-09,800,ATM_Withdrawal,in-store,Los Angeles,5,0
+T0196,C025,2024-01-12,720.8,Travel,online,Phoenix,14,0
+T0197,C012,2024-01-26,100,ATM_Withdrawal,in-store,Los Angeles,6,1
+T0198,C037,2024-07-06,3588.6,Luxury_Goods,in-store,Foreign,0,0
+T0199,C098,2024-04-09,800,ATM_Withdrawal,in-store,New York,12,0
+T0200,C047,2024-11-15,196.95,Gas,online,Houston,16,0
+T0201,C088,2024-10-12,1975.56,Electronics,online,New York,12,0
+T0202,C047,2024-01-20,224.47,Travel,online,Foreign,16,1
+T0203,C018,2024-09-20,216.13,Online_Retail,online,Houston,16,0
+T0204,C018,2024-06-02,346.81,Online_Retail,online,Phoenix,10,0
+T0205,C076,2024-06-02,250.97,Online_Retail,online,Phoenix,16,0
+T0206,C061,2024-06-06,151.62,Grocery,in-store,Chicago,21,0
+T0207,C093,2024-10-22,273.9,Grocery,in-store,Chicago,20,0
+T0208,C030,2024-07-13,220.71,Grocery,in-store,Los Angeles,16,0
+T0209,C019,2024-06-09,16.44,Dining,online,Phoenix,22,0
+T0210,C054,2024-08-29,1281.23,Travel,online,Los Angeles,13,0
+T0211,C095,2024-09-01,349.36,Grocery,online,Phoenix,6,0
+T0212,C068,2024-10-06,300,ATM_Withdrawal,in-store,Los Angeles,14,0
+T0213,C046,2024-06-01,111.49,Gas,in-store,Los Angeles,7,0
+T0214,C099,2024-10-13,173.13,Gas,online,Foreign,22,0
+T0215,C093,2024-07-21,139.1,Gas,in-store,New York,18,0
+T0216,C045,2024-12-01,1859.42,Travel,online,Foreign,9,0
+T0217,C033,2024-05-19,2467.06,Luxury_Goods,online,Foreign,17,1
+T0218,C018,2024-01-27,1330.2,Electronics,online,Los Angeles,1,0
+T0219,C013,2024-01-03,200,ATM_Withdrawal,in-store,Foreign,15,1
+T0220,C071,2024-05-27,1548.44,Travel,online,Houston,15,0
+T0221,C042,2024-01-20,191.95,Gas,online,New York,20,0
+T0222,C023,2024-05-28,1000,ATM_Withdrawal,online,New York,12,0
+T0223,C005,2024-05-25,344.22,Grocery,in-store,Phoenix,19,0
+T0224,C059,2024-03-24,894.26,Luxury_Goods,online,Houston,8,0
+T0225,C094,2024-12-11,1532.58,Luxury_Goods,in-store,New York,23,1
+T0226,C097,2024-09-20,291.18,Dining,online,Phoenix,20,0
+T0227,C042,2024-06-14,410.13,Electronics,in-store,Foreign,3,1
+T0228,C032,2024-06-17,100.78,Grocery,in-store,Houston,7,0
+T0229,C039,2024-03-01,31.12,Grocery,in-store,Foreign,11,0
+T0230,C060,2024-12-26,314.34,Gas,online,Houston,21,0
+T0231,C099,2024-03-09,85.09,Gas,online,Foreign,9,0
+T0232,C062,2024-08-29,1166.08,Travel,online,Phoenix,11,0
+T0233,C097,2024-08-16,37.84,Dining,online,Foreign,19,0
+T0234,C068,2024-09-15,291.78,Online_Retail,online,New York,18,0
+T0235,C026,2024-10-25,1408.55,Travel,online,Foreign,16,0
+T0236,C063,2024-10-15,918.54,Electronics,in-store,New York,14,0
+T0237,C008,2024-10-23,3110.32,Luxury_Goods,in-store,Houston,8,0
+T0238,C010,2024-02-05,348.0,Grocery,in-store,Chicago,22,0
+T0239,C061,2024-11-26,270.38,Grocery,in-store,Houston,5,0
+T0240,C054,2024-07-11,318.3,Online_Retail,online,Houston,14,0
+T0241,C011,2024-09-27,1143.93,Travel,online,Chicago,3,0
+T0242,C017,2024-08-05,254.49,Dining,online,New York,9,0
+T0243,C069,2024-04-06,300,ATM_Withdrawal,online,Los Angeles,14,0
+T0244,C093,2024-01-09,1882.04,Electronics,online,Foreign,13,0
+T0245,C031,2024-12-26,213.25,Dining,online,New York,19,1
+T0246,C007,2024-01-29,83.87,Dining,online,Houston,14,0
+T0247,C018,2024-12-10,213.29,Gas,online,Foreign,18,1
+T0248,C042,2024-05-20,150.61,Dining,in-store,Los Angeles,21,0
+T0249,C008,2024-11-25,1948.74,Travel,online,Houston,17,0
+T0250,C086,2024-07-11,300,ATM_Withdrawal,in-store,Foreign,13,1
+T0251,C024,2024-01-30,2120.59,Luxury_Goods,online,Chicago,22,0
+T0252,C072,2024-05-10,200,ATM_Withdrawal,in-store,Phoenix,16,1
+T0253,C027,2024-04-07,41.44,Online_Retail,online,Foreign,2,0
+T0254,C007,2024-04-06,307.03,Gas,in-store,Foreign,19,0
+T0255,C098,2024-04-18,319.06,Dining,in-store,Los Angeles,10,0
+T0256,C025,2024-05-02,528.35,Electronics,in-store,Los Angeles,22,0
+T0257,C071,2024-06-06,230.57,Online_Retail,online,Chicago,12,0
+T0258,C034,2024-08-28,282.96,Online_Retail,online,Phoenix,15,0
+T0259,C098,2024-04-23,25.54,Online_Retail,online,Los Angeles,11,0
+T0260,C095,2024-03-19,922.52,Travel,online,Foreign,17,0
+T0261,C026,2024-10-08,93.55,Online_Retail,online,Los Angeles,12,0
+T0262,C084,2024-09-08,228.18,Online_Retail,online,Chicago,15,0
+T0263,C059,2024-04-04,1161.11,Travel,online,Chicago,5,0
+T0264,C070,2024-03-11,12.17,Grocery,online,New York,21,0
+T0265,C081,2024-07-10,181.95,Dining,online,Foreign,4,1
+T0266,C008,2024-09-28,541.48,Luxury_Goods,in-store,Foreign,17,1
+T0267,C093,2024-04-01,239.17,Gas,in-store,New York,16,0
+T0268,C014,2024-06-30,616.97,Electronics,online,Los Angeles,6,0
+T0269,C035,2024-12-22,200,ATM_Withdrawal,online,Chicago,12,0
+T0270,C029,2024-07-13,41.79,Gas,online,Foreign,20,0
+T0271,C049,2024-11-26,3458.65,Luxury_Goods,online,Foreign,5,1
+T0272,C043,2024-10-17,1430.73,Electronics,online,Los Angeles,6,0
+T0273,C061,2024-10-15,315.77,Gas,online,New York,21,0
+T0274,C085,2024-12-30,209.59,Grocery,online,Chicago,0,0
+T0275,C051,2024-07-18,1694.1,Electronics,in-store,Los Angeles,18,0
+T0276,C087,2024-02-10,346.08,Online_Retail,online,Houston,23,0
+T0277,C065,2024-06-23,295.15,Online_Retail,online,New York,3,1
+T0278,C078,2024-09-08,500,ATM_Withdrawal,in-store,New York,20,0
+T0279,C030,2024-12-04,241.1,Online_Retail,online,Phoenix,12,0
+T0280,C049,2024-07-13,645.75,Electronics,in-store,Los Angeles,22,0
+T0281,C092,2024-06-06,159.61,Travel,online,Chicago,11,0
+T0282,C057,2024-08-17,73.71,Online_Retail,online,Chicago,3,0
+T0283,C072,2024-11-01,100,ATM_Withdrawal,online,New York,2,1
+T0284,C077,2024-02-13,141.85,Online_Retail,online,Houston,0,0
+T0285,C093,2024-05-17,101.43,Dining,online,Foreign,12,0
+T0286,C064,2024-02-09,704.54,Travel,online,Foreign,13,0
+T0287,C047,2024-08-22,219.67,Gas,online,Foreign,20,1
+T0288,C014,2024-06-17,1297.36,Travel,online,Foreign,12,0
+T0289,C057,2024-06-13,56.28,Online_Retail,online,Houston,20,0
+T0290,C078,2024-05-29,339.37,Dining,in-store,Chicago,5,0
+T0291,C095,2024-10-15,898.61,Luxury_Goods,online,Foreign,8,0
+T0292,C026,2024-12-28,1004.0,Travel,online,Phoenix,0,0
+T0293,C027,2024-06-04,987.13,Luxury_Goods,in-store,New York,13,0
+T0294,C031,2024-09-02,346.84,Gas,online,Foreign,13,0
+T0295,C075,2024-10-31,800,ATM_Withdrawal,in-store,Phoenix,1,0
+T0296,C082,2024-11-09,457.73,Electronics,online,Los Angeles,21,0
+T0297,C006,2024-04-23,300,ATM_Withdrawal,in-store,Houston,3,1
+T0298,C066,2024-12-19,241.05,Dining,in-store,Chicago,12,0
+T0299,C065,2024-02-13,696.55,Travel,online,Foreign,0,1
+T0300,C015,2024-09-04,532.7,Travel,online,Foreign,10,0
+T0301,C045,2024-12-29,1550.92,Luxury_Goods,online,Foreign,14,1
+T0302,C015,2024-05-04,344.53,Grocery,in-store,Foreign,3,0
+T0303,C067,2024-07-26,1004.8,Travel,online,Chicago,17,0
+T0304,C081,2024-11-10,204.01,Travel,online,Foreign,21,1
+T0305,C026,2024-12-26,1474.21,Luxury_Goods,in-store,Foreign,22,1
+T0306,C009,2024-12-09,360.82,Electronics,online,Chicago,10,0
+T0307,C063,2024-06-27,209.58,Online_Retail,online,Phoenix,12,0
+T0308,C046,2024-06-09,2852.39,Luxury_Goods,online,Foreign,9,0
+T0309,C016,2024-07-17,58.06,Dining,in-store,New York,5,0
+T0310,C054,2024-11-26,1144.15,Travel,online,Houston,5,0
+T0311,C023,2024-01-28,984.35,Travel,online,Los Angeles,5,0
+T0312,C046,2024-09-15,337.7,Grocery,in-store,Los Angeles,6,0
+T0313,C084,2024-01-16,789.35,Luxury_Goods,in-store,Houston,22,0
+T0314,C098,2024-08-22,108.15,Dining,in-store,New York,8,0
+T0315,C073,2024-01-22,3379.14,Luxury_Goods,online,Chicago,17,0
+T0316,C098,2024-01-17,1541.98,Luxury_Goods,online,New York,23,0
+T0317,C058,2024-05-01,49.91,Gas,in-store,New York,14,0
+T0318,C027,2024-03-12,66.43,Online_Retail,online,Foreign,19,1
+T0319,C027,2024-03-27,212.93,Dining,online,Phoenix,11,0
+T0320,C042,2024-12-13,184.9,Gas,in-store,Phoenix,8,0
+T0321,C013,2024-03-05,1754.04,Travel,online,Houston,1,0
+T0322,C090,2024-12-12,607.98,Travel,online,Foreign,22,0
+T0323,C051,2024-11-20,2081.97,Luxury_Goods,online,Chicago,20,1
+T0324,C099,2024-07-07,1882.22,Electronics,in-store,Phoenix,23,0
+T0325,C059,2024-07-02,2824.5,Luxury_Goods,in-store,Foreign,2,0
+T0326,C009,2024-05-25,300,ATM_Withdrawal,online,Houston,6,0
+T0327,C044,2024-01-24,1560.17,Travel,online,Houston,10,0
+T0328,C013,2024-08-07,502.37,Luxury_Goods,online,Foreign,5,1
+T0329,C026,2024-02-17,1771.7,Travel,online,Chicago,5,0
+T0330,C084,2024-03-25,317.29,Online_Retail,online,Chicago,2,1
+T0331,C007,2024-12-26,100,ATM_Withdrawal,in-store,Foreign,22,0
+T0332,C013,2024-12-14,86.9,Grocery,online,Houston,2,0
+T0333,C057,2024-08-04,345.97,Grocery,online,Foreign,10,0
+T0334,C089,2024-02-22,1641.02,Travel,online,Los Angeles,12,0
+T0335,C041,2024-03-09,286.55,Online_Retail,online,Chicago,4,0
+T0336,C083,2024-08-13,1352.54,Travel,online,Foreign,18,1
+T0337,C045,2024-02-14,302.39,Dining,online,Houston,19,0
+T0338,C013,2024-06-10,1932.01,Travel,online,Phoenix,23,0
+T0339,C018,2024-11-07,214.34,Dining,in-store,Foreign,2,1
+T0340,C037,2024-07-19,74.14,Grocery,in-store,Los Angeles,16,0
+T0341,C038,2024-10-31,179.86,Grocery,online,Houston,12,0
+T0342,C010,2024-08-03,295.25,Grocery,in-store,Chicago,4,0
+T0343,C047,2024-04-20,175.52,Travel,online,New York,0,1
+T0344,C006,2024-07-31,180.36,Grocery,in-store,Phoenix,9,0
+T0345,C055,2024-05-22,200,ATM_Withdrawal,online,Foreign,17,1
+T0346,C011,2024-06-16,62.83,Gas,online,Phoenix,6,0
+T0347,C051,2024-01-30,1715.97,Electronics,in-store,Foreign,13,0
+T0348,C032,2024-12-07,251.8,Electronics,in-store,New York,14,0
+T0349,C095,2024-09-11,171.0,Travel,online,Foreign,22,1
+T0350,C045,2024-03-01,259.2,Gas,online,Chicago,4,0
+T0351,C099,2024-10-22,99.4,Grocery,in-store,Houston,8,0
+T0352,C081,2024-10-17,1074.28,Electronics,in-store,Houston,16,0
+T0353,C022,2024-12-11,314.05,Online_Retail,online,Los Angeles,8,0
+T0354,C093,2024-01-07,1738.57,Electronics,online,Foreign,16,1
+T0355,C032,2024-01-19,70.85,Grocery,in-store,Chicago,12,0
+T0356,C071,2024-06-12,1000,ATM_Withdrawal,online,Chicago,7,1
+T0357,C035,2024-04-24,247.44,Electronics,in-store,New York,16,0
+T0358,C067,2024-06-08,273.0,Grocery,in-store,New York,14,0
+T0359,C042,2024-06-04,1193.04,Electronics,in-store,New York,11,0
+T0360,C095,2024-04-10,349.25,Dining,in-store,Chicago,18,0
+T0361,C094,2024-11-21,194.13,Dining,online,New York,13,1
+T0362,C089,2024-06-06,260.95,Grocery,in-store,New York,21,0
+T0363,C014,2024-03-13,340.67,Dining,online,Houston,15,0
+T0364,C092,2024-12-24,186.72,Gas,online,New York,7,0
+T0365,C048,2024-10-30,1880.23,Luxury_Goods,online,Phoenix,4,1
+T0366,C073,2024-06-10,98.74,Grocery,in-store,Foreign,4,1
+T0367,C051,2024-04-13,35.39,Online_Retail,online,Chicago,14,0
+T0368,C018,2024-03-02,730.96,Electronics,online,New York,5,0
+T0369,C069,2024-03-02,100.1,Online_Retail,online,Los Angeles,14,0
+T0370,C012,2024-06-16,224.61,Travel,online,Chicago,22,0
+T0371,C019,2024-05-13,1402.79,Electronics,online,Chicago,12,0
+T0372,C023,2024-08-24,94.95,Grocery,in-store,Houston,17,0
+T0373,C014,2024-07-24,391.82,Travel,online,Foreign,1,0
+T0374,C048,2024-11-26,515.84,Electronics,in-store,New York,0,0
+T0375,C057,2024-01-26,1893.22,Travel,online,Foreign,10,0
+T0376,C022,2024-03-29,500,ATM_Withdrawal,in-store,Houston,0,1
+T0377,C046,2024-11-10,60.53,Dining,online,Chicago,8,0
+T0378,C080,2024-02-14,172.87,Dining,in-store,Houston,13,0
+T0379,C036,2024-05-07,800,ATM_Withdrawal,online,Houston,6,1
+T0380,C081,2024-06-25,275.69,Grocery,in-store,Foreign,11,0
+T0381,C073,2024-04-22,118.42,Online_Retail,online,Houston,8,0
+T0382,C004,2024-04-29,208.56,Gas,online,Houston,16,0
+T0383,C021,2024-01-29,1660.13,Electronics,online,Foreign,7,0
+T0384,C098,2024-12-23,211.46,Dining,in-store,Chicago,5,0
+T0385,C046,2024-09-09,332.45,Grocery,in-store,Phoenix,18,0
+T0386,C070,2024-04-22,89.09,Gas,online,Houston,1,1
+T0387,C003,2024-03-31,956.71,Luxury_Goods,online,Foreign,19,1
+T0388,C042,2024-02-26,58.16,Grocery,online,Los Angeles,18,0
+T0389,C068,2024-10-27,235.13,Online_Retail,online,New York,11,0
+T0390,C013,2024-08-11,63.55,Online_Retail,online,Chicago,10,0
+T0391,C082,2024-04-24,3254.47,Luxury_Goods,in-store,Foreign,17,0
+T0392,C086,2024-12-25,1498.34,Travel,online,Foreign,23,0
+T0393,C074,2024-04-23,800,ATM_Withdrawal,online,Los Angeles,19,0
+T0394,C082,2024-06-12,590.29,Electronics,in-store,Los Angeles,10,0
+T0395,C022,2024-02-04,611.65,Electronics,in-store,Houston,0,0
+T0396,C045,2024-08-02,158.99,Gas,online,Foreign,0,1
+T0397,C022,2024-09-02,100,ATM_Withdrawal,in-store,Houston,11,0
+T0398,C074,2024-01-11,21.36,Dining,online,Houston,2,0
+T0399,C041,2024-02-08,137.66,Gas,online,New York,10,0
+T0400,C071,2024-08-08,1453.33,Electronics,in-store,Phoenix,19,0
