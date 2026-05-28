@@ -91,13 +91,11 @@ fraud-signal-analytics-using-snowflake/
 │   ├── customers.csv
 │   └── transactions.csv
 ├── queries/
-│   ├── 01_merchant_flag_rate.sql
-│   ├── 02_risk_tier_segmentation.sql
-│   ├── 03_repeat_offender_profiling.sql
-│   └── 04_composite_risk_scoring.sql
+│   ├── Final Project.sql
 ├── README.md
 └── report/
-    └── fraud_signal_analytics_report.pdf
+|   ├── fraud_signal_analytics_report.pdf
+|   └── fraud_signal_analytics_report.docx
 ```
 
 ---
