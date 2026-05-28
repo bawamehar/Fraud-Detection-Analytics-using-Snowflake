@@ -1,4 +1,4 @@
-# fraud-signal-analytics
+# Fraud-Signal-Analytics
 
 > SQL-based exploratory analysis and composite risk scoring framework for financial fraud detection, built on Snowflake — designed as the feature engineering foundation for an ML classification pipeline.
 
@@ -35,138 +35,18 @@ Two tables, synthetic, designed to reflect realistic fraud distribution patterns
 
 ---
 
-## Analytical Approach
+## Analytical Queries
 
-Four SQL queries, each answering a progressively deeper sub-question:
+Four SQL queries were developed, each answering a progressively deeper sub-question:
 
-### Query 1 — Fraud Flag Rate by Merchant Category
-Identifies which merchant categories concentrate the most fraud risk.
+| Query | Sub-question | Key SQL Concepts |
+|---|---|---|
+| 1 — Merchant Flag Rate | Which merchant categories concentrate the most fraud risk? | GROUP BY, aggregation, ratio calculation |
+| 2 — Risk Tier Segmentation | Do high-risk customers transact differently from low-risk ones? | JOIN, conditional aggregation, CASE |
+| 3 — Repeat Offender Profiling | Which customers show recurring flagging behavior? | HAVING, multi-table JOIN, filtering |
+| 4 — Composite Risk Scoring | Can multiple fraud signals be combined into a single risk score? | CTEs, multi-signal CASE scoring, derived labels |
 
-**Key finding:** Luxury Goods (51%) and ATM Withdrawals (44.2%) account for 55.7% of all flagged transactions despite representing only 25.8% of volume.
-
-```sql
-SELECT
-    MERCHANT_CATEGORY,
-    COUNT(*)                                     AS total_transactions,
-    SUM(IS_FLAGGED)                              AS flagged_count,
-    ROUND(SUM(IS_FLAGGED) * 100.0 / COUNT(*), 1) AS flag_rate_pct,
-    ROUND(AVG(AMOUNT), 2)                        AS avg_transaction_amount,
-    ROUND(SUM(AMOUNT), 2)                        AS total_volume
-FROM TRANSACTIONS
-GROUP BY MERCHANT_CATEGORY
-ORDER BY flag_rate_pct DESC;
-```
-
----
-
-### Query 2 — Risk Tier Behavioral Segmentation
-Compares transaction behavior across Low, Medium, and High risk customer tiers.
-
-**Key finding:** High-risk customers are 2.5x more likely to generate a flagged transaction than Low-risk customers, and transact at higher average amounts — a compounding risk signal.
-
-```sql
-SELECT
-    C.RISK_TIER,
-    COUNT(DISTINCT T.CUSTOMER_ID)                AS customer_count,
-    COUNT(T.TRANSACTION_ID)                      AS total_transactions,
-    ROUND(AVG(T.AMOUNT), 2)                      AS avg_transaction_amount,
-    SUM(T.IS_FLAGGED)                            AS flagged_count,
-    ROUND(SUM(T.IS_FLAGGED) * 100.0 / COUNT(*), 1) AS flag_rate_pct
-FROM TRANSACTIONS T
-JOIN CUSTOMERS C ON T.CUSTOMER_ID = C.CUSTOMER_ID
-GROUP BY C.RISK_TIER
-ORDER BY CASE C.RISK_TIER WHEN 'High' THEN 1 WHEN 'Medium' THEN 2 ELSE 3 END;
-```
-
----
-
-### Query 3 — Repeat Offender Customer Profiling
-Identifies customers with two or more flagged transactions — a significantly stronger fraud signal than a single event.
-
-**Key finding:** Repeat flagging is not exclusive to High-risk customers. Four Low-risk customers appear in the top 15 most-flagged list with flag rates between 50–66.7%, demonstrating that static risk labels become stale over time.
-
-```sql
-SELECT
-    T.CUSTOMER_ID, C.RISK_TIER,
-    COUNT(T.TRANSACTION_ID)       AS total_transactions,
-    MAX(T.AMOUNT)                 AS max_single_txn,
-    SUM(T.IS_FLAGGED)             AS flagged_count,
-    ROUND(SUM(T.IS_FLAGGED) * 100.0 / COUNT(*), 1) AS flag_rate_pct
-FROM TRANSACTIONS T
-JOIN CUSTOMERS C ON T.CUSTOMER_ID = C.CUSTOMER_ID
-GROUP BY T.CUSTOMER_ID, C.RISK_TIER
-HAVING SUM(T.IS_FLAGGED) >= 2
-ORDER BY flagged_count DESC, flag_rate_pct DESC
-LIMIT 15;
-```
-
----
-
-### Query 4 — Composite Risk Scoring Model
-Constructs a multi-signal composite risk score per customer using five independent fraud signals, aggregated via two CTEs.
-
-**Signals scored:**
-| Signal | Weight |
-|---|---|
-| Merchant category risk | 1–3 |
-| Off-hours activity (10pm–5am) | 0 or 2 |
-| Online channel | 0 or 1 |
-| Amount-to-credit-limit ratio | 1–3 |
-| Customer risk tier | 1–3 |
-
-**Score range:** 2 (minimal risk) to 12 (maximum risk)
-
-**Derived risk labels:** Critical (≥8) · High (≥6) · Medium (≥4) · Low (<4)
-
-**Key finding:** Customer C091, classified Low-risk by static account attributes, scored Critical under the composite model due to a $3,712 transaction — invisible to a static risk system.
-
-```sql
-WITH TRANSACTION_SCORES AS (
-    SELECT
-        T.TRANSACTION_ID, T.CUSTOMER_ID, C.RISK_TIER,
-        T.MERCHANT_CATEGORY, T.AMOUNT, C.CREDIT_LIMIT,
-        T.HOUR_OF_DAY, T.TRANSACTION_TYPE, T.IS_FLAGGED,
-        CASE WHEN T.MERCHANT_CATEGORY IN ('Luxury_Goods','ATM_Withdrawal') THEN 3
-             WHEN T.MERCHANT_CATEGORY IN ('Travel','Gas') THEN 2 ELSE 1
-        END AS merchant_risk_score,
-        CASE WHEN T.HOUR_OF_DAY >= 22 OR T.HOUR_OF_DAY <= 5 THEN 2 ELSE 0
-        END AS off_hours_score,
-        CASE WHEN T.TRANSACTION_TYPE = 'online' THEN 1 ELSE 0
-        END AS online_score,
-        CASE WHEN T.AMOUNT > (C.CREDIT_LIMIT * 0.5) THEN 3
-             WHEN T.AMOUNT > (C.CREDIT_LIMIT * 0.25) THEN 2 ELSE 1
-        END AS amount_ratio_score,
-        CASE WHEN C.RISK_TIER = 'High' THEN 3
-             WHEN C.RISK_TIER = 'Medium' THEN 2 ELSE 1
-        END AS tier_risk_score
-    FROM TRANSACTIONS T
-    JOIN CUSTOMERS C ON T.CUSTOMER_ID = C.CUSTOMER_ID
-),
-CUSTOMER_SCORES AS (
-    SELECT CUSTOMER_ID, RISK_TIER,
-        COUNT(TRANSACTION_ID)                      AS total_transactions,
-        ROUND(AVG(AMOUNT), 2)                      AS avg_amount,
-        SUM(IS_FLAGGED)                            AS total_flagged,
-        ROUND(AVG(merchant_risk_score + off_hours_score
-              + online_score + amount_ratio_score
-              + tier_risk_score), 2)               AS avg_composite_score,
-        MAX(merchant_risk_score + off_hours_score
-          + online_score + amount_ratio_score
-          + tier_risk_score)                       AS max_composite_score
-    FROM TRANSACTION_SCORES
-    GROUP BY CUSTOMER_ID, RISK_TIER
-)
-SELECT CUSTOMER_ID, RISK_TIER, total_transactions, avg_amount,
-    total_flagged, avg_composite_score, max_composite_score,
-    CASE WHEN avg_composite_score >= 8 THEN 'Critical'
-         WHEN avg_composite_score >= 6 THEN 'High'
-         WHEN avg_composite_score >= 4 THEN 'Medium'
-         ELSE 'Low'
-    END AS derived_risk_label
-FROM CUSTOMER_SCORES
-ORDER BY avg_composite_score DESC, total_flagged DESC
-LIMIT 15;
-```
+Full query code is available in the `/queries` folder.
 
 ---
 
@@ -206,7 +86,7 @@ The `IS_FLAGGED` column serves as the **binary target variable**. The logical ne
 ## Repository Structure
 
 ```
-fraud-signal-analytics/
+fraud-signal-analytics-using-snowflake/
 ├── data/
 │   ├── customers.csv
 │   └── transactions.csv
@@ -226,4 +106,4 @@ fraud-signal-analytics/
 
 **Mehar Singh Bawa**  
 MS Computer Information Systems — Colorado State University  
-[LinkedIn](https://www.linkedin.com/in/meharsinghbawa) · [GitHub](https://github.com/meharsinghbawa)
+[LinkedIn](https://www.linkedin.com/in/bawamehar) · [GitHub](https://github.com/bawamehar)
